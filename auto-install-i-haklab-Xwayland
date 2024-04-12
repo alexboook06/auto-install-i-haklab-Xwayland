@@ -1,0 +1,28 @@
+yes|apt update && yes|apt upgrade
+
+yes|pkg update && yes|pkg upgrade
+
+apt install wget -y
+
+mkdir -p $PREFIX/etc/apt/sources.list.d
+
+wget https://raw.githubusercontent.com/ivam3/termux-packages/gh-pages/ivam3-termux-packages.list -O $PREFIX/etc/apt/sources.list.d/ivam3-termux-packages.list
+
+apt update && apt upgrade  -y
+
+apt install i-haklab -y
+
+pkg install x11-repo -y
+
+pkg install root-repo -y
+
+export DISPLAY=:0
+
+apt  install Xwayland
+
+yes|apt install termux-desktop-xfce 
+
+i-haklab Xwayland
+
+i-haklab Xwayland
+
